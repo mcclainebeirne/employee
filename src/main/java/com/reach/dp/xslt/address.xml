@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table class="Address">
+    <column name="street" type="String"/>
+    <column name="city" type="String"/>
+    <column name="state" type="String"/>
+    <column name="zip" type="String"/>
+</table>

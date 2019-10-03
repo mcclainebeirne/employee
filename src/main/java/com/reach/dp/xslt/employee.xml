@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table class="Employee">
+    <column name="id" type="Integer"/>
+    <column name="name" type="String"/>
+    <column name="lastname" type="String"/>
+    <column name="gender" type="String"/>
+    <column name="birthdate" type="Date"/>
+    <column name="hiredate" type="Date"/>
+</table>

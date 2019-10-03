@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="employees">
+    <table name="Department">
+        <column name="deptNo" type="Char" pkey="true" />
+        <column name="deptName" type="String" />
+    </table>
+    <table name="deptEmp">
+        <column name="empNo" type="Integer" pkey="true" />
+        <column name="deptNo" type="char" pkey="true" />
+        <column name="fromDate" type="Date" />
+        <column name="to_date" type="Date" />
+    </table>
+    <table name="deptManager">
+        <column name="empNo" type="Integer" pkey="true" />
+        <column name="deptNo" type="char" pkey="true" />
+        <column name="fromDate" type="Date" />
+        <column name="toDate" type="Date" />
+    </table>
+    <table name="employees">
+        <column name="empNo" type="Integer" pkey="true" />
+        <column name="birthDate" type="Date" />
+        <column name="firstName" type="String" />
+        <column name="lastName" type="String" />
+        <column name="gender" type="char" />
+        <column name="hireDate" type="Date" />
+        <column name="id" type="Integer" pkey="true" autoincrement="true" />
+        <column name="company" type="String" nullable="true" />
+        <column name="lastName" type="String" nullable="true" />
+        <column name="firstName" type="String" nullable="true" />
+        <column name="emailAddress" type="String" nullable="true" />
+        <column name="jobTitle" type="String" nullable="true" />
+        <column name="businessPhone" type="String" nullable="true" />
+        <column name="homePhone" type="String" nullable="true" />
+        <column name="mobilePhone" type="String" nullable="true" />
+        <column name="faxNumber" type="String" nullable="true" />
+        <column name="address" type="String" nullable="true" />
+        <column name="city" type="String" nullable="true" />
+        <column name="stateProvince" type="String" nullable="true" />
+        <column name="zipPostalCode" type="String" nullable="true" />
+        <column name="countryRegion" type="String" nullable="true" />
+        <column name="webPage" type="String" nullable="true" />
+        <column name="notes" type="String" nullable="true" />
+        <column name="attachments" type="binary" nullable="true" />
+    </table>
+    <table name="salaries">
+        <column name="empNo" type="Integer" pkey="true" />
+        <column name="salary" type="Integer" />
+        <column name="fromDate" type="Date" pkey="true" />
+        <column name="toDate" type="Date" />
+    </table>
+    <table name="titles">
+        <column name="empNo" type="Integer" pkey="true" />
+        <column name="title" type="String" pkey="true" />
+        <column name="fromDate" type="Date" pkey="true" />
+        <column name="toDate" type="Date" nullable="true" />
+    </table>
+</database>
